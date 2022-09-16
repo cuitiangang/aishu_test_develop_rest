@@ -5,15 +5,14 @@ log/-error.log.10-04-2019
 
 log/-results.log.10-04-2019
 
-<<<<<<< HEAD
-package-lock.json
+# package-lock.json
 
-package.json
+# package.json
 
 pdalog/-error.log.09-04-2019
 
 pdalog/-results.log.09-04-2019
-=======
+
 config/db.json
 
 pdalog/-results.log.09-04-2019
@@ -25,7 +24,6 @@ log/-results.log.11-04-2019
 config/db.json
 
 pdalog/-error.log.09-04-2019
->>>>>>> master
 
 config/db.json
 
