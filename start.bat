@@ -1,0 +1,1 @@
+pm2 kill & e: & cd e:\20211113debugger\MW_EISOO_PDAREST-release-master & npm run prod

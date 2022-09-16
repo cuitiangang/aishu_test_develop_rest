@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS  `serial_number_reject_data` (
+  `serial_number` varchar(60) NOT NULL,
+  `check_in_time` varchar(40) NOT NULL,
+  `material_number` varchar(40) DEFAULT NULL,
+  `factory` varchar(40) DEFAULT NULL,
+  `work_number` varchar(40) DEFAULT NULL,
+  `appearance` varchar(5) DEFAULT NULL,
+  `hardware` varchar(5) DEFAULT NULL,
+  `software` varchar(5) DEFAULT NULL,
+  `other` varchar(5) DEFAULT NULL,
+  `mountings` varchar(5) DEFAULT NULL,
+  `character6` varchar(20) DEFAULT NULL,
+  `character7` varchar(20) DEFAULT NULL,
+  `character8` varchar(20) DEFAULT NULL,
+  `character9` varchar(20) DEFAULT NULL,
+  `character10` varchar(20) DEFAULT NULL,
+  `comment` varchar(225) DEFAULT NULL,
+  `check_in_person` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`serial_number`, `check_in_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

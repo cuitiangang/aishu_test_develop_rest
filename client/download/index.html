@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<title>爱数-提供数据管理基础设施的大数据公司</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="./lib/jquery.min.js"></script>
+		<script type="text/javascript" src="./lib/qrcode.js"></script>
+		<link rel="stylesheet" type="text/css" href="./assets/css/download.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="appBox">
+				<img src="./assets/images/PDA.png" />
+			</div>
+			<div class="textBox">
+				<div class="text">
+					<h1>爱数PDA应用下载</h1>
+					<p>1. 点击浏览器图标 <img src="./assets/images/Chromium.png"/></p>
+					<p>2. 按扫描键扫描屏幕下方二维码</p>
+					<p>3. 浏览器会自动下载PDA应用，从屏幕上方手指下滑可查看下载状态</p>
+					<p>4. 下载完成后，点击安装，按提示安装应用即可</p>
+					<p class="tips">*开未知来源应用安装：设置(Settings) -> 安全选项(Security) -> 开启未知来源应用安装(Unknown sources)</p>
+				</div>
+				<div class="qrBox">
+					<img src="./assets/images/scan.png" class="scan"/>
+					<div id="qrcode"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+				width: 120,
+				height: 120
+			});
+
+			function makeCode() {
+				var url = '';
+				if (location.host.indexOf(location.port + '') > 0) {
+					url = 'http://' + location.host + '/pda';
+				} else {
+					url = 'http://' + location.host + ':' + location.port + '/pda';
+				}
+				qrcode.makeCode(url);
+			}
+			makeCode();
+		</script>
+	</body>

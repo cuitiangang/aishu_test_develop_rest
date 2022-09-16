@@ -1,0 +1,26 @@
+{
+    "dev":{
+        "cloud": {
+            "baseUrl": "https://my300174-api.saps4hanacloud.cn/sap/opu/odata/sap/"
+        },
+        "db": {
+            "host": "192.168.186.182",
+            "user": "root",
+            "password": "pdaroot001",
+            "port": "3306",
+            "database": "pda_db"
+        }
+    },
+    "prod":{
+        "cloud": {
+            "baseUrl": "https://my300174-api.saps4hanacloud.cn/sap/opu/odata/sap/"
+        },
+        "db": {
+            "host": "192.168.186.182",
+            "user": "root",
+            "password": "pdaroot001",
+            "port": "3306",
+            "database": "pda_db"
+        }
+    }
+}

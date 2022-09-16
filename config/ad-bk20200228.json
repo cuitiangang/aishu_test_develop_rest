@@ -1,0 +1,9 @@
+{
+    "url": "LDAP://dc.eisoo.com",
+    "baseDN": "DC=eisoo,DC=com",
+    "username": "eisoo\\pdatest1",
+    "password": "o3dT29oAwOiY",
+    "attributes": {
+        "user": ["PDARole"]
+    }
+}

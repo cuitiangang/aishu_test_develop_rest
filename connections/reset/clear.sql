@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `factory_storage_info`;
+DROP TABLE IF EXISTS `label_type`;
+DROP TABLE IF EXISTS `hana_user_info`;
+DROP TABLE IF EXISTS `serial_number_reject_data`;
+DROP TABLE IF EXISTS `user_token`;
+DROP TABLE IF EXISTS `serial_number_goods_movement`;
+DROP TABLE IF EXISTS `serial_number_master_data`;
+DROP TABLE IF EXISTS `area_permission`;
+DROP TABLE IF EXISTS `receipt_type`;

@@ -1,0 +1,56 @@
+
+条码主数据表
+
+  序列号  `serial_number` varchar(80) NOT NULL,
+  物料号  `material_number` varchar(30) NOT NULL,
+  工厂    `factory` varchar(20) NOT NULL,
+  库存地点 `location` varchar(20) NOT NULL,
+  批次号   `batch_number` varchar(20) DEFAULT NULL,
+  采购订单 `purchase_order` varchar(20) DEFAULT NULL,
+  工单     `work_number` varchar(20) DEFAULT NULL,
+  物料描述  `material_desc` varchar(50) DEFAULT NULL,
+  工单日期  `work_date` varchar(20) DEFAULT NULL,
+  检验标识  `check_flag` varchar(20) DEFAULT NULL,
+  创建人    `create_person` varchar(20) DEFAULT NULL,
+  创建日期  `create_date` varchar(20) DEFAULT NULL,
+  放行人    `release_person` varchar(20) DEFAULT NULL,
+  放行日期  `release_time` varchar(20) DEFAULT NULL,
+  库存类型  `location_type` varchar(2) DEFAULT NULL,
+  投料表示  `issue_flag` varchar(2) DEFAULT NULL,
+
+
+出入库数据表
+
+  序列号     `serial_number` varchar(40) NOT NULL,
+  物料凭证号  `material_document_number` varchar(40) NOT NULL,
+  物料号      `material_number` varchar(40) DEFAULT NULL,
+  过账日期    `transfer_date` varchar(20) DEFAULT NULL,
+  过账类型    `transfer_type` varchar(10) DEFAULT NULL,
+  移动类型    `movement_type` varchar(10) DEFAULT NULL,
+  库存地点从   `location_from` varchar(80) DEFAULT NULL,
+  库存地点到   `location_to` varchar(80) DEFAULT NULL,
+  单据类型     `receipt_type` varchar(10) DEFAULT NULL,
+  单据号      `receipt_number` varchar(50) DEFAULT NULL,
+  过账人      `transfer_person` varchar(20) DEFAULT NULL,
+  过账时间    `transfer_time` varchar(20) DEFAULT NULL,
+  备注        `comment` varchar(20) DEFAULT NULL,
+
+不合格产品数据表
+
+  序列号    `serial_number` varchar(60) NOT NULL,
+  登记时间   `check_in_time` varchar(40) NOT NULL,
+  物料号     `material_number` varchar(40) DEFAULT NULL,
+  工厂       `factory` varchar(40) DEFAULT NULL,
+  工单号     `work_number` varchar(40) DEFAULT NULL,
+  外观      `appearance` varchar(5) DEFAULT NULL,
+  硬件      `hardware` varchar(5) DEFAULT NULL,
+  软件      `software` varchar(5) DEFAULT NULL,
+  其他      `other` varchar(5) DEFAULT NULL,
+  配件盒    `mountings` varchar(5) DEFAULT NULL,
+  不良品特性6   `character6` varchar(20) DEFAULT NULL,
+  不良品特性7   `character7` varchar(20) DEFAULT NULL,
+  不良品特性8  `character8` varchar(20) DEFAULT NULL,
+  不良品特性9  `character9` varchar(20) DEFAULT NULL,
+  不良品特性10  `character10` varchar(20) DEFAULT NULL,
+  备注    `comment` varchar(225) DEFAULT NULL,
+  登记人  `check_in_person` varchar(30) DEFAULT NULL,

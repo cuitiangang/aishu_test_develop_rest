@@ -1,0 +1,99 @@
+/* CSS Document */
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background: url(../images/backstage.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: PingFang SC Regular, Source Han Sans CN, Microsoft YaHei UI, sans-serif;
+  background-attachment: fixed; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #E60012;
+  cursor: pointer; }
+
+a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+p {
+  margin: 0; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+i {
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden; }
+
+.appBox {
+  margin-right: 160px; }
+  .appBox img {
+    width: 350px; }
+
+.textBox {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .textBox .text {
+    margin: 50px 0;
+    width: 100%; }
+  .textBox h1 {
+    font-size: 40px;
+    margin-bottom: 40px; }
+  .textBox p + p {
+    margin-top: 10px; }
+  .textBox .tips {
+    font-size: 14px; }
+
+.qrBox {
+  position: relative; }
+  .qrBox .scan {
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 160px; }
+  .qrBox #qrcode {
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px; }

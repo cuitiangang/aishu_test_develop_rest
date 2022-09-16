@@ -1,0 +1,16 @@
+{
+    "main_path": "\\\\scan.eisoo.com\\customdoc\\PDA\\",
+    "dev_path": "\\\\192.168.4.102\\customdoc\\PDA\\",
+    "folder_1": "mainmodule\\",
+    "cs_folder_1": "csmainmodule\\",
+    "name_1": "MainModule.txt",
+    "folder_2": "finishedproductmodule\\",
+    "cs_folder_2": "csfinishedproductmodule\\",
+    "name_2": "FinishedProductModule.txt",
+    "folder_3": "softmodule\\",
+    "cs_folder_3": "cssoftmodule\\",
+    "name_3": "SoftModule.txt",
+    "folder_4": "outerbox\\",
+    "cs_folder_4": "csouterbox\\",
+    "name_4": "OuterBox.txt"
+}
